@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AccountsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/account_list_cv">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accounts"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/listacc"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/listacc"
+                    android:weightSum="2"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+              <com.google.android.material.card.MaterialCardView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_margin="5dp"
+                  android:backgroundTint="#f54242"
+                  >
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/lll"
+                      android:orientation="vertical"
+                      >
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Bank"
+                          android:textSize="14sp"
+                          android:textColor="@color/white"
+                          android:layout_marginTop="3dp"
+                          android:layout_marginStart="5dp"
+                          />
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Rs:- 0"
+                          android:textSize="16sp"
+                          android:layout_marginStart="5dp"
+                          android:textColor="@color/white"
+                          android:layout_margin="5dp"
+                          />
+                  </LinearLayout>
+              </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="#2196F3"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cash"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginStart="5dp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rs:- 0"
+                                android:textSize="16sp"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/white"
+                                android:layout_margin="5dp"
+                                />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_alignParentStart="true"
+
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="ADjust Balance"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="@color/grey">
+
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Records"
+                    android:textColor="@color/black"
+
+                    android:visibility="visible"
+                    app:cornerRadius="15dp"
+                    app:icon="@drawable/baseline_format_list_bulleted_24"
+                    app:iconTint="#2196F3"
+                    app:strokeColor="@color/grey">
+
+                </com.google.android.material.button.MaterialButton>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_list_cv"
+            android:layout_margin="10dp"
+            android:id="@+id/expense_structure"
+
+
+         >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Expenses structure"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LAST 30 DAYS"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"
+              android:layout_marginStart="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs :-0"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginStart="10dp"/>
+                <org.eazegraph.lib.charts.PieChart
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/ExpensePiechart"/>
+
+            </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/expense_structure"
+            android:layout_margin="10dp"
+            android:id="@+id/balancetrendcv"
+
+
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance Trend"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs :-0"
+                            android:id="@+id/trend_rate"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="vs past period"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp"
+                            android:layout_marginEnd="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+0%"
+                            android:id="@+id/trend_per"
+                            android:textColor="@color/green"
+                            android:textSize="25sp"
+                            android:layout_marginEnd="10dp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <com.github.mikephil.charting.charts.LineChart
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    android:layout_below="@id/rl1"/>
+
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/balancetrendcv"
+            android:layout_margin="10dp"
+            android:id="@+id/cashflowcv"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash Flow"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Am I spending less than I make?"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <RelativeLayout
+                    android:id="@+id/rl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs :-0"
+                            android:id="@+id/cashflowrate"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="vs past period"
+                            android:textColor="@color/grey"
+                            android:textSize="14sp"
+                            android:layout_marginEnd="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+0%"
+                            android:id="@+id/cashfl_pr"
+                            android:textColor="@color/green"
+                            android:textSize="25sp"
+                            android:layout_marginEnd="10dp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <com.github.mikephil.charting.charts.LineChart
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="15dp"
+                    android:layout_below="@id/rl1"/>
+
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+ android:src="@drawable/baseline_add_24"
+        app:tint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/add"
+        app:fabSize="normal"
+        app:icon="@drawable/baseline_add_24"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+android:backgroundTint="@color/blue"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/orange"
+        app:fabSize="mini"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/transfer"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/white"
+        app:srcCompat="@drawable/transfer_svgrepo_com" />
+</RelativeLayout>

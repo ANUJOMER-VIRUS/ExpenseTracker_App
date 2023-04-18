@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/outline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_records"
+        android:icon="@drawable/baseline_format_list_bulleted_24"
+        android:title="Records" />
+    <item
+        android:id="@+id/nav_budget"
+        android:icon="@drawable/budget_calculator_count_svgrepo_com"
+        android:iconTint="#3489eb"
+        android:title="Budgets" />
+    <item
+        android:id="@+id/nav_Goals"
+        android:icon="@drawable/goals_svgrepo_com"
+        android:iconTint="#86eb34"
+        android:title="Goals" />
+    <item
+        android:id="@+id/nav_shopping"
+        android:icon="@drawable/basket_svgrepo_com"
+        android:iconTint="#07eb22"
+        android:title="Shopping list" />
+</menu>
